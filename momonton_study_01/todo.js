@@ -22,6 +22,9 @@ function deleteToDo(){
   const cleanToDos = todos.filter(function(toDo) {
     return toDo.id !== parseInt(li.id);
   });
+  console.log(li.id)
+  console.log(cleanToDos);
+  console.log(todos);
   todos = cleanToDos;
   saveToDos();
 };
